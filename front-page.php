@@ -49,7 +49,7 @@
 /* 2 Column Section
     -------------------------------------------*/
       // La Query
-      $ct_the_query = new WP_Query( 'page_id=52' );
+      $ct_the_query = new WP_Query( 'page_id=2' );
       // Il Loop
       while ( $ct_the_query->have_posts() ) :
         $ct_the_query->the_post();?>
@@ -122,7 +122,7 @@
 /* Panel Jumbtron
  -------------------------------------------*/
 // La Query
-$ct_the_query = new WP_Query( 'page_id=61' );
+$ct_the_query = new WP_Query( 'page_id=2' );
 // Il Loop
 while ( $ct_the_query->have_posts() ) :
   $ct_the_query->the_post();?>
