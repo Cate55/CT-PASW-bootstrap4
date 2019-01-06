@@ -13,3 +13,5 @@
 #Creazione Design Wordpress con Adobe XD https://www.adobe.com/it/products/xd.html? - Libreria icone https://fontawesome.com/v4.7.0/
 
 #Strumenti utilizzati per lo sviluppo: Atom; Local by Flywheel 
+
+#Demo http://blogdesigncate.altervista.org/
