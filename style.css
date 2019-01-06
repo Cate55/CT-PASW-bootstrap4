@@ -13,23 +13,182 @@ Text Domain: ct
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+
+.admin-bar .navbar{top:32px;}
+
+/* General
+-------------------------------------------------------- */
 body{
 display: flex;
 min-height: 100vh;
 flex-direction: column;
+padding-top: 70px;
+font-family: 'Montserrat';
 }
+
+body.navbar-transparent{padding-top: 0;}
 
 .main-content{
   flex: 1;
 }
 
+a{color: #00CCC2;}
+
+
+
+/* Helpers
+-------------------------------------------------------- */
+.margin-bottom{margin-bottom: 40px;}
+.animate{
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+    }
+
+
+    /*Buttons
+    -------------------------------------------------------- */
+
+.btn-outline-light{text-transform: uppercase;font-size: 16px;padding: 15px 30px;}
+.btn-outline-light:hover{
+border: 1px solid transparent;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#76bc0d+0,02d6d2+100 */
+    background: #76bc0d; /* Old browsers */
+    background: -moz-linear-gradient(left, #76bc0d 0%, #02d6d2 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #76bc0d 0%,#02d6d2 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #76bc0d 0%,#02d6d2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#76bc0d', endColorstr='#02d6d2',GradientType=1 ); /* IE6-9 *//* IE6-9 */
+}
+
+.btn-primary{
+  text-transform: uppercase;font-size: 16px;padding: 15px 30px;
+  border: none;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#76bc0d+0,02d6d2+100 */
+  background: #76bc0d; /* Old browsers */
+  background: -moz-linear-gradient(left, #76bc0d 0%, #02d6d2 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #76bc0d 0%,#02d6d2 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #76bc0d 0%,#02d6d2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#76bc0d', endColorstr='#02d6d2',GradientType=1 ); /* IE6-9 *//* IE6-9 */
+
+}
+
+.btn-primary:hover{
+  background:#00CCC2;
+}
+
+/* Utilities
+-------------------------------------------------------- */
+.trattino{
+  width: 100px;
+  height: 4px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#76bc0d+0,02d6d2+100 */
+    background: #76bc0d; /* Old browsers */
+    background: -moz-linear-gradient(left, #76bc0d 0%, #02d6d2 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #76bc0d 0%,#02d6d2 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #76bc0d 0%,#02d6d2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#76bc0d', endColorstr='#02d6d2',GradientType=1 ); /* IE6-9 *//* IE6-9 */
+margin-bottom: 20px;
+}
+
+
+
+/* Menu
+-------------------------------------------------------- */
+
+.navbar-transparent .bg-primary{background: transparent!important;}
+.navbar-transparent.is-scrolled .bg-primary{background: rgba(0,0,0, 0.5)!important;}
+.navbar-transparent.is-scrolled .navbar-brand {width:40px;display: inline-block;}
+
+.navbar-brand {width:100px;}
+.navbar-brand img {width:90%;}
+.nav-link{text-transform: uppercase;font-size: 13px;}
+
+.form-control{background: transparent;border: none;}
+.icon-search{color:#fff!important; background:transparent; border:none;font-size: 26px;margin-right: 10px;}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #fff!important;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #fff!important;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #fff!important;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #fff!important;
+}
+
+.navbar-social a{display: inline-block;color:#fff;font-size: 20px;padding: 10px;}
+
+
 /* Slider
 -------------------------------------------------------- */
 .carousel,
 .carousel-inner,
-.carousel-item{ height: 500px;}
+.carousel-item{ height: 700px;}
+.slider-big h3{ font-size: 60px; font-weight: bold; max-width: 700px;}
+.slider-big .carousel-text p{font-weight: 200;font-size: 22px;max-width: 700px;}
+.slider-big .carousel-caption{width:100%; left: 0; right: 0;}
 
+/* Focus
+-------------------------------------------------------- */
+.focuses{margin-top:40px; margin-bottom:40px}
+.focus {border-left: 4px solid #4A4343;margin-bottom: 20px}
+.focus h3 {font-size: 24px;}
+.focus h3 a{color:#333;}
+.focus .text-link{font-size: 12px;color:#333;}
+.focus .text-intro{font-size: 12px; margin-bottom: 5px;text-transform: uppercase;opacity: 0.5}
 
+/* Two Columns (Pre-Evidenza)
+-------------------------------------------------------- */
+.two-columns-title{font-size: 40px;color: #4A4343; font-weight: bold;line-height: 42px}
+.two-columns p{font-size: 300;}
+
+/* Card
+-------------------------------------------------------- */
+.card-cover{border-radius: 0;min-height: 300px;padding: 30px;position: relative;}
+.card-cover a{color: #fff; text-decoration: none;}
+.card-cover.card-title{font-size: 12px;text-transform: uppercase;opacity: 0.7;font-weight: 300;}
+.card-cover.card-text{font-size: 26px;line-height: 28px;max-width: 290px;}
+.card-cover.card-link{position: absolute;bottom: 10px;right: 30px;}
+
+/* Two Blockquote
+-------------------------------------------------------- */
+.two-blockquote{margin-top:100px;margin-bottom: 100px;}
+.two-blockquote p{font-size: 300;}
+.two-blockquote blockquote{border-left: 10px solid #02EEE3;padding-left: 20px;}
+.two-blockquote blockquote strong{font-size: 40px;font-weight: bold;}
+.two-blockquote blockquote:nth-child(1) {border-left: 10px solid #A8EE12;padding-left: 20px;}
+
+/* Testimonials
+-------------------------------------------------------- */
+.testimonials blockquote{font-size: 44px; color: #4A4343;font-weight: bold;line-height: 46px;}
+.testimonials a{font-weight: bold;}
+.testimonials blockquote:before{
+content: "\201c";
+font-size: 150px;
+position: absolute;
+top: -20px;
+left: -50px;
+font-family: georgia;
+color: #ddd;
+}
+
+/* Call to action box
+-------------------------------------------------------- */
+.call-to-action-box{text-align: center;padding: 200px 0}
+.cta-title{font-size: 56px;font-weight: bold;}
+.cta-text{font-weight: 300;min-width: 700px;margin: 0 auto;}
+
+/* Card News
+-------------------------------------------------------- */
+.card-news{border: 0;}
+.card-news .card-meta a{text-transform: uppercase;font-weight: bold;}
+.card-news .card-title{color:  #4A4343;font-size: 26px;font-weight: bold;}
+.card-news a:hover{text-decoration: none;}
+.card-news .card-text{font-weight: 300;}
+.card-news .card-info{border-top: 1px solid #ddd;color: #999;padding-top: 10px;font-size: 12px;}
 /* Comments
 -------------------------------------------------------- */
 #comments{margin-bottom: 40px;}
@@ -57,6 +216,20 @@ textarea{padding: 5px 10px; border: 1px solid #ccc;}
 .pagination{margin-bottom: 40px;}
 .page-numbers{display: inline-block;padding: 10px 15px;border: 1px solid #ddd; margin-right: 4px;}
 
+
+/* ------------------------------------------------------
+Tablet
+-------------------------------------------------------- */
+@media  (max-width: 998px){
+.navbar-transparent .bg-primary {background: #333!important;}
+.navbar-social{flex-direction: row;}
+}
+
+/* ------------------------------------------------------
+Smartphone
+-------------------------------------------------------- */
+@media  (max-width: 767px){}
+.slider-big h3{ font-size: 40px;}
 /* general wordpress style
 -------------------------------------------------------- */
 .post img{max-width: 100%;height: auto;}
