@@ -12,8 +12,8 @@
 <?php } ?>
 
   <main class="container mt-5 main-content">
-    <div class="row">
-
+         
+   <div class="row">
   <div class="col-sm-8 ml-sm-auto mr-sm-auto">
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
@@ -23,11 +23,7 @@
           <?php } ?>
 
         <?php the_content(); ?>
-        <hr>
-        <div class="comments">
-          <?php comments_template(); ?>
-        </div>
-
+              
       </article>
 
     <?php endwhile; else: ?>
@@ -35,3 +31,8 @@
     <?php endif; ?>
 
   </div>
+</div>
+
+</main>
+
+<?php get_footer(); ?>
